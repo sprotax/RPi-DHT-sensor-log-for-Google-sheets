@@ -109,6 +109,7 @@ In this folder your going to want to add your Google json authenication file. Th
 7.) If you ever wish to stop the script either had a `#` infront of the line in crontab or add a file name **stop** in the Temp folder. to do this type `sudo nano stop` and **ctrl+s** followed by **ctrl+x**.
 
 8.) Optional color highlighting in Google spreadsheet. To make it easier I recomand you run the script first and get 10 or so lines filled in. Then open your Google spreadsheet and left click on the **B** at the top of the column, after that **ctrl** left click the first two rows. Then goto Format > Conditional formatting. Then set Format rules to Format cells if...`is not between`, then below add your two values. Optionally chnage the highlight color by clicking on the paint bucket below. Then Repeat these steps for column **C** if wanted.
+<br>
 ![Example of Conditional formatting](images/format-rules.png)
 
 #### Example images
