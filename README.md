@@ -82,7 +82,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip -y && sud
 4.) Next we will install git and clone this reposity locally onto your machine.
 ```
 sudo apt install git
-git clone https://github.com/sprotax/RaspberryPi-DHT-Sensor-Log.git
+git clone https://github.com/sprotax/RaspberryPi-DHT-sensor-Log.git
 cd RaspberryPi-DHT-Sensor-Log
 ls
 ```
