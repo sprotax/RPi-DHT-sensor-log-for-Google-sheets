@@ -200,4 +200,3 @@ while True:
         logging.info(f'The Temperature is {temp}C and the Relative humidity is {humidity}%')
     #wait the amount specifyed in the Json file
     time.sleep(INTERVAL)
-
