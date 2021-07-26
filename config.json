@@ -1,0 +1,21 @@
+{
+    "info":{
+        "info": "This section does not need to be changed",
+        "Author": "Sprotax",
+        "Github": "https://github.com/sprotax",
+        "Need Help?": "Goto https://github.com/sprotax/RaspberryPi-DHT-sensor-Log"
+    },
+
+    "certification":{
+        "json-authentication": "Location of Google API json file",
+        "spreadsheet-name": "Name of Google Spreadsheet name"
+    },
+
+    "logger":{
+        "DHT-type": "DHT Sensor model",
+        "GPIO-pin": "Which GPIO pin it's connected to, must be in board.D{GPIO pin}",
+        "Max-Length": "How long should the file get",
+        "interval": "How often should I record data in seconds",
+        "Store-Data-locally": "Should I also add this data to the info.log file, {true or false}"
+    }
+}
