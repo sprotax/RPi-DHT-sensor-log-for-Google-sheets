@@ -83,7 +83,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip -y && sud
 ```
 sudo apt install git
 git clone https://github.com/sprotax/RaspberryPi-DHT-sensor-Log.git
-cd RaspberryPi-DHT-Sensor-Log
+cd RaspberryPi-DHT-sensor-Log
 ls
 ```
 the last command should print a list as shown below. <br>
