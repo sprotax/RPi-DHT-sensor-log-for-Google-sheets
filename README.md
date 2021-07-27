@@ -68,6 +68,7 @@ Now we can start setting up the raspberry pi. Run the following commands in the 
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip -y
+sudo apt install -y libgpiod-dev
 sudo pip3 install board
 sudo pip3 install adafruit-circuitpython-dht  
 sudo pip3 install gspread
@@ -76,7 +77,7 @@ sudo pip3 install oauth2client
 
 For those you want one long commmand instead, copy the below block (this does the same thing as listed above just in one big command instead).
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip -y && sudo pip3 install board && sudo pip3 install adafruit-circuitpython-dht && sudo pip3 install gspread && sudo pip3 install oauth2client
+sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip -y && sudo apt install -y libgpiod-dev && sudo pip3 install board && sudo pip3 install adafruit-circuitpython-dht && sudo pip3 install gspread && sudo pip3 install oauth2client
 ```
 
 4.) Next we will install git and clone this reposity locally onto your machine.
