@@ -11,7 +11,7 @@
 
 ## What is this project?
 
-This project allows users record sensor data from the Adafruit DHT sensors (either the DHT11 or DHT22) and make a log of it in a Google Spreadsheet. This project utilizes the Google gspread API to allow automatic recodings viewable anywhere in the world with a internet connection! The project also has a json file for simple end user configuation
+This project allows users record sensor data from the Adafruit DHT sensors (either the DHT11 or DHT22) and make a log of it in a Google Spreadsheet. This project utilizes the Google gspread API to allow automatic recodings viewable anywhere in the world with a internet connection! The project also has a json file for simple end user configuation.
 <br>
 
 ### Features
