@@ -1,5 +1,5 @@
 
-# Raspberry Pi DHT Sensor-Log
+# Raspberry Pi DHT sensor-Log
 <br>
 
 ## Table of Contents
