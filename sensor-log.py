@@ -35,7 +35,7 @@ import logging
 time.sleep(10)
 current_time = datetime.now()
 current_time = current_time.strftime("%d:%m:%Y %H:%M:%S")
-log =f'./Temp/logs/[{current_time}]info.log'
+log =f'./RaspberryPi-DHT-sensor-Log/logs/[{current_time}]info.log'
 
 
 #enables logging of errors and warnings to "info.log"
@@ -51,7 +51,7 @@ if os.path.exists('./stop'):
     logging.warning('Program stopped due file "stop" existing. Delete the file and restart the program.')
 
 #Gathers variable data from the config.json file to use in this program
-with open('./Temp/config.json') as CONFIG:
+with open('./RaspberryPi-DHT-sensor-Log/config.json') as CONFIG:
     try:
         DATA = json.load(CONFIG)
         DHT = DATA['logger']['DHT-type']
