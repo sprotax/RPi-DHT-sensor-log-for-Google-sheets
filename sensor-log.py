@@ -1,5 +1,5 @@
 """
-RaspberryPi-DHT-Sensor-Log
+RPi-DHT-sensor-log-for-Google-sheets
 
 Copyright 2021, sprotax
 
