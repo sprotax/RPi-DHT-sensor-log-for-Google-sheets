@@ -47,8 +47,8 @@ logging.info('Program starting...')
 #checks if a file named "stop" exists and terminates the program if so. 
 #The file MUST be labled "stop" with no file extension like ".txt".
 if os.path.exists('./stop'):
-    quit()
     logging.warning('Program stopped due file "stop" existing. Delete the file and restart the program.')
+    quit()
 
 #Gathers variable data from the config.json file to use in this program
 with open('./sensor-log/config.json') as CONFIG:
