@@ -1,1 +1,1 @@
-
+This file serves no purpose other then to have a logs folder. if wanted this file can be deleted.
