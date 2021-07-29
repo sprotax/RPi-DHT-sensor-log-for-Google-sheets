@@ -51,7 +51,7 @@ if os.path.exists('./stop'):
     logging.warning('Program stopped due file "stop" existing. Delete the file and restart the program.')
 
 #Gathers variable data from the config.json file to use in this program
-with open('./RaspberryPi-DHT-sensor-Log/config.json') as CONFIG:
+with open('./sensor-log/config.json') as CONFIG:
     try:
         DATA = json.load(CONFIG)
         DHT = DATA['logger']['DHT-type']
