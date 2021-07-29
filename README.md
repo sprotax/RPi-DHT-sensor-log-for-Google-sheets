@@ -83,12 +83,10 @@ sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip -y && sud
 4.) Next we will install git and clone this reposity locally onto your machine.
 ```
 sudo apt install git
-git clone https://github.com/sprotax/RaspberryPi-DHT-sensor-Log.git
-cd RaspberryPi-DHT-sensor-Log
-ls
+git clone https://github.com/sprotax/RPi-DHT-sensor-log-for-Google-sheets.git sensor-log sensor-log
+cd sensor-log/
 ```
-the last command should print a list as shown below. <br>
-![config Json Sample](images/final%20output.png)
+This will be the folder where the whole project runs.
 <br>
 In this folder your going to want to add your Google json authenication file. The simplist way to do this is to create a new file and then copy the infomation over. run `sudo nano gspread.json`, next open your Google json authenication file and do a **ctrl+a** followed by **ctrl+c** (Use cmd key instead on Mac's). Then go back to your ssh application and right click in the window. this should copy and paste the infomation from your machine onto the raspberry pi.
 
@@ -105,7 +103,7 @@ In this folder your going to want to add your Google json authenication file. Th
     * interval -- How long should it wait between running, measued in seconds.
     * Store-Data-Locally -- Should the data also be added to the local log file, use true or false.
     
-6.) Lastly were going to add this scipt to crontab to start everytime the raspberry pi starts. To do this type `crontab -e` (If this is your first time entering crontab it will ask which editor to use, pick 1 for nano as its the simplist). Then go to the botom of the file and add `@reboot python3 /home/pi/Temp/Sensor-log.py` It also a good idea to automcatilcy restart the raspberry pi once a week. to do this add `@weekly sudo reboot` which wil restart the raspberry every sunday at midnight. This will also create a new log file in the logs folder.
+6.) Lastly were going to add this scipt to crontab to start everytime the raspberry pi starts. To do this type `crontab -e` (If this is your first time entering crontab it will ask which editor to use, pick 1 for nano as its the simplist). Then go to the botom of the file and add `@reboot python3 /home/pi/sensor-log/sensor-log.py` It also a good idea to automcatilcy restart the raspberry pi once a week. to do this add `@weekly sudo reboot` which wil restart the raspberry every sunday at midnight. This will also create a new log file in the logs folder.
 
 7.) If you ever wish to stop the script either had a `#` infront of the line in crontab or add a file name **stop** in the Temp folder. to do this type `sudo nano stop` and **ctrl+s** followed by **ctrl+x**.
 
